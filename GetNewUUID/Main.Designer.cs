@@ -31,11 +31,12 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             this.buttonNewUUID = new System.Windows.Forms.Button();
             this.textBoxUUID = new System.Windows.Forms.TextBox();
+            this.comboBoxLanguage = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // buttonNewUUID
             // 
-            this.buttonNewUUID.Location = new System.Drawing.Point(12, 13);
+            this.buttonNewUUID.Location = new System.Drawing.Point(12, 39);
             this.buttonNewUUID.Name = "buttonNewUUID";
             this.buttonNewUUID.Size = new System.Drawing.Size(300, 23);
             this.buttonNewUUID.TabIndex = 0;
@@ -45,17 +46,28 @@
             // 
             // textBoxUUID
             // 
-            this.textBoxUUID.Location = new System.Drawing.Point(12, 43);
+            this.textBoxUUID.Location = new System.Drawing.Point(12, 68);
             this.textBoxUUID.Name = "textBoxUUID";
             this.textBoxUUID.ReadOnly = true;
             this.textBoxUUID.Size = new System.Drawing.Size(300, 20);
             this.textBoxUUID.TabIndex = 1;
             // 
+            // comboBoxLanguage
+            // 
+            this.comboBoxLanguage.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.comboBoxLanguage.FormattingEnabled = true;
+            this.comboBoxLanguage.Location = new System.Drawing.Point(12, 12);
+            this.comboBoxLanguage.Name = "comboBoxLanguage";
+            this.comboBoxLanguage.Size = new System.Drawing.Size(300, 21);
+            this.comboBoxLanguage.TabIndex = 2;
+            this.comboBoxLanguage.SelectedIndexChanged += new System.EventHandler(this.comboBoxLanguage_SelectedIndexChanged);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(324, 78);
+            this.ClientSize = new System.Drawing.Size(324, 100);
+            this.Controls.Add(this.comboBoxLanguage);
             this.Controls.Add(this.textBoxUUID);
             this.Controls.Add(this.buttonNewUUID);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -70,6 +82,7 @@
 
         private System.Windows.Forms.Button buttonNewUUID;
         private System.Windows.Forms.TextBox textBoxUUID;
+        private System.Windows.Forms.ComboBox comboBoxLanguage;
     }
 }
 

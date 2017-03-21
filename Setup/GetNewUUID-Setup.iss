@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "GetNewUUID"
-#define MyAppVersion "1.0.0.0"
+#define MyAppVersion "1.0.0.1"
 #define MyAppPublisher "Hämmer Electronics"
 #define MyAppURL "www.softwareload24.de.tl"
 #define MyAppExeName "GetNewUUID.exe"
@@ -42,6 +42,8 @@ Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescrip
 [Files]
 Source: "C:\Users\tim\Desktop\GetNewUUID\GetNewUUID\bin\Debug\GetNewUUID.exe"; DestDir: "{app}"; Flags: ignoreversion
 Source: "C:\Users\tim\Desktop\GetNewUUID\GetNewUUID\bin\Debug\License.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\tim\Desktop\GetNewUUID\GetNewUUID\bin\Debug\Languages.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "C:\Users\tim\Desktop\GetNewUUID\GetNewUUID\bin\Debug\languages\*"; DestDir: "{app}\languages\"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
