@@ -2,11 +2,11 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "GetNewUUID"
-#define MyAppVersion "1.0.0.4"
+#define MyAppVersion "1.0.1.0"
 #define MyAppPublisher "Hämmer Electronics"
 #define MyAppURL "www.softwareload24.de.tl"
 #define MyAppExeName "GetNewUUID.exe"
-#define MyPath "C:\Users\tim\Desktop\Updaten_Snyk\GetNewUUID"
+#define MyPath "C:\Users\Tim\Documents\Git\C# und VB\GetNewUUID"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -23,9 +23,9 @@ AppPublisher={#MyAppPublisher}
 AppPublisherURL={#MyAppURL}
 AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
-DefaultDirName={pf}\{#MyAppName}
+DefaultDirName={commonpf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
-LicenseFile={#MyPath}\GetNewUUID\bin\Debug\License.txt
+LicenseFile={#MyPath}\GetNewUUID\bin\Release\License.txt
 OutputDir={#MyPath}\Setup
 OutputBaseFilename=GetNewUUID-Setup
 SetupIconFile={#MyPath}\GetNewUUID\GetNewUUID.ico
@@ -41,10 +41,10 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "{#MyPath}\GetNewUUID\bin\Debug\GetNewUUID.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#MyPath}\GetNewUUID\bin\Debug\License.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#MyPath}\GetNewUUID\bin\Debug\Languages.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#MyPath}\GetNewUUID\bin\Debug\languages\*"; DestDir: "{app}\languages\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "{#MyPath}\GetNewUUID\bin\Release\GetNewUUID.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\GetNewUUID\bin\Release\License.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\GetNewUUID\bin\Release\Languages.dll"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\GetNewUUID\bin\Release\languages\*"; DestDir: "{app}\languages\"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
