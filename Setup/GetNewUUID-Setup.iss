@@ -6,7 +6,6 @@
 #define MyAppPublisher "Hämmer Electronics"
 #define MyAppURL "www.softwareload24.de.tl"
 #define MyAppExeName "GetNewUUID.exe"
-#define MyPath "C:\Users\Tim\Documents\Git\C# und VB\GetNewUUID"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -25,10 +24,10 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={commonpf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
-LicenseFile={#MyPath}\GetNewUUID\bin\Release\License.txt
-OutputDir={#MyPath}\Setup
+LicenseFile=..\src\GetNewUUID\License.txt
+OutputDir=..\Setup
 OutputBaseFilename=GetNewUUID-Setup
-SetupIconFile={#MyPath}\GetNewUUID\GetNewUUID.ico
+SetupIconFile=..\src\GetNewUUID\GetNewUUID.ico
 Compression=lzma
 SolidCompression=yes
 
@@ -41,10 +40,9 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "{#MyPath}\GetNewUUID\bin\Release\GetNewUUID.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#MyPath}\GetNewUUID\bin\Release\License.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#MyPath}\GetNewUUID\bin\Release\Languages.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "{#MyPath}\GetNewUUID\bin\Release\languages\*"; DestDir: "{app}\languages\"; Flags: ignoreversion recursesubdirs createallsubdirs
+Source: "..\src\GetNewUUID\bin\Release\net5.0-windows\GetNewUUID.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\src\GetNewUUID\bin\Release\net5.0-windows\License.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\src\GetNewUUID\bin\Release\net5.0-windows\languages\*"; DestDir: "{app}\languages\"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
