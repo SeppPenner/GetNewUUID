@@ -11,7 +11,7 @@ The executable was written and tested in .Net 5.0.
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://raw.githubusercontent.com/SeppPenner/GetNewUUID/master/License.txt)
 [![Known Vulnerabilities](https://snyk.io/test/github/SeppPenner/GetNewUUID/badge.svg)](https://snyk.io/test/github/SeppPenner/GetNewUUID)
 
-## Screenshot from the executable:
+## Screenshot from the executable
 ![Screenshot from the executable](https://github.com/SeppPenner/GetNewUUID/blob/master/Screenshot.PNG "Screenshot from the executable")
 
 Change history
