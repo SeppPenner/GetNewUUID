@@ -2,7 +2,6 @@ GetNewUUID
 ====================================
 
 GetNewUUID is an executable to generate new UUIDs.
-The executable was written and tested in .Net 5.0.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/65h9i12tbmxkn0g4?svg=true)](https://ci.appveyor.com/project/SeppPenner/getnewuuid)
 [![GitHub issues](https://img.shields.io/github/issues/SeppPenner/GetNewUUID.svg)](https://github.com/SeppPenner/GetNewUUID/issues)
